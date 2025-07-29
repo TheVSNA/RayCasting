@@ -1,0 +1,4 @@
+In this project I tried to re-create the basic principles behind the Raycasting approach used to render 3D object on a 2D screen. This was the approach used in some 90s games like Wolfenstein 3D.
+In this approach, the distance between the player and the objects in front of him is calculated through a series of rays, each of which has a slightly different angle from the others.
+Each calculated distance is then used to draw a thin rectangle, that represent the portion of the object, seen by the character through a specific ray. The union of all the thin rectangles composes the rendering of the object.
+When the character moves closer to the object, the distance decreases, and the rectangle get taller, when the character moves further away from the object the distance increase and the rectangle gets smaller.
