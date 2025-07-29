@@ -3,14 +3,14 @@ package it.personal.projects.raycasting.constants;
 public class Constants {
 
     /**
-     * numero di raggi per il ray casting
+     * field of view in gradi
      */
-    public static final int N_RAYS = 50;
+    public static final int FOV = 70;
 
     /**
      * gradi di differenza tra due raggi
      */
-    public static final int DELTA_REAY = 1;
+    public static final double DELTA_RAY = .05;
 
     public static final int FRAME_WIDTH=1600;
 

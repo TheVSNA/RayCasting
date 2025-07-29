@@ -18,7 +18,18 @@ public class Line extends Shape{
     }
 
     public void setAngle(Double angle) {
+
         this.angle = angle;
+
+        //normalizzo angolo tra -180 e +180
+        if(angle<-Math.PI){
+            double tmp = Math.abs(angle+Math.PI);
+            this.angle=Math.PI-tmp;
+        }
+        if(angle>Math.PI){
+            double tmp = Math.abs(angle-Math.PI);
+            this.angle=-Math.PI+tmp;
+        }
     }
 
     public int getEndX(){

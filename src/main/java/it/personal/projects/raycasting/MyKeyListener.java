@@ -30,6 +30,16 @@ public class MyKeyListener implements KeyListener {
                 xIncrement=1;
                 break;
             }
+            case "J":{
+                //ruota senso antiorario
+                pane.rotateCharacter(5.0*Math.PI/180.0);
+                break;
+            }
+            case "K":{
+                //ruota senso orario
+                pane.rotateCharacter(-5.0*Math.PI/180.0);
+                break;
+            }
             default:{break;}
         }
         pane.moveCharacter(xIncrement,yIncrement);
